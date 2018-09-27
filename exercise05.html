@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let star = prompt("Enter the name: ");
+    let arr1 = Array("Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus");
+    let arr2 = Array("Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo");
+    function convert(string) {
+        for (let i = 0; i < arr1.length; i++) {
+            if (string === arr1[i]) {
+                string = arr2[i];
+            }
+        }
+        document.write(string);
+    }
+
+    convert(star);
+</script>
+
+</body>
+</html>
